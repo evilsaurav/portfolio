@@ -16,11 +16,16 @@ const About = () => {
             src="assets/coding-pov.png"
             className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"
           />
-          <div className="z-10">
-            <p className="headtext">Hi, I'm Ali Sanati</p>
-            <p className="subtext">
-              Over the last 4 years, I developed my frontend and backend dev
-              skills to deliver dynamic and software and web applications.
+          <div className="z-10 pb-4">
+            <p className="headtext">Transforming Data into Digital Solutions</p>
+            <p className="subtext mt-4">
+              I am a dedicated data professional and software engineer with over three years of experience managing complex data systems within the public health sector. My foundation is built on ensuring data integrity, conducting rigorous audits, and developing comprehensive analytics dashboards for large-scale operations.
+            </p>
+            <p className="subtext mt-4">
+              Driven by a hyper-analytical mindset, I am expanding my technical architecture by building AI-powered, full-stack applications that solve real-world complexities. I thrive at the intersection of data management and software development.
+            </p>
+            <p className="subtext mt-4">
+              When I am not architecting databases or writing code, you can find me studying human physiology, researching motorcycle mechanics, or producing music.
             </p>
           </div>
           <div className="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
@@ -81,7 +86,7 @@ const About = () => {
           <div className="z-10 w-[50%]">
             <p className="headtext">Time Zone</p>
             <p className="subtext">
-              I'm based in Mars, and open to remote work worldwide
+              I'm based in India, and open to remote work worldwide
             </p>
           </div>
           <figure className="absolute left-[30%] top-[10%]">
@@ -100,10 +105,10 @@ const About = () => {
         {/* Grid 5 */}
         <div className="grid-default-color grid-5">
           <div className="z-10 w-[50%]">
-            <p className="headText">Teck Stack</p>
+            <p className="headText">Tech Stack</p>
             <p className="subtext">
-              I specialize in a variety of languages, frameworks, and tools taht
-              allow me to build robust and scalable applications
+              I specialize in a variety of languages, frameworks, and tools that
+              allow me to build robust and scalable data solutions and web applications.
             </p>
           </div>
           <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">

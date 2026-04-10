@@ -30,16 +30,16 @@ const Contact = () => {
     try {
       console.log("From submitted:", formData);
       await emailjs.send(
-        "service_79b0nyj",
-        "template_17us8im",
+        "service_ezoqhwv", // YOUR EMAILJS SERVICE ID
+        "template_8aecb07", // YOUR EMAILJS TEMPLATE ID
         {
           from_name: formData.name,
-          to_name: "Ali",
+          to_name: "Saurav Kumar",
           from_email: formData.email,
-          to_email: "AliSanatiDev@gmail.com",
+          to_email: "souravkumarsk@gmail.com",
           message: formData.message,
         },
-        "pn-Bw_mS1_QQdofuV"
+        "lJegSzH-D0vteupE4" // YOUR EMAILJS PUBLIC KEY
       );
       setIsLoading(false);
       setFormData({ name: "", email: "", message: "" });
@@ -51,7 +51,7 @@ const Contact = () => {
     }
   };
   return (
-    <section className="relative flex items-center c-space section-spacing">
+    <section id="contact" className="relative flex items-center c-space section-spacing">
       <Particles
         className="absolute inset-0 -z-50"
         quantity={100}
