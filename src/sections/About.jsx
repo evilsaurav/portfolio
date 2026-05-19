@@ -7,114 +7,97 @@ import Reveal from "../components/Reveal";
 
 const About = () => {
   const grid2Container = useRef();
+
   return (
     <section className="c-space section-spacing" id="about">
       <h2 className="text-heading">About Me</h2>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
-        {/* Grid 1 */}
-        <Reveal delay={0.1}><div className="flex items-end grid-default-color grid-1 h-full w-full">
-          <img
-            src="assets/coding-pov.png"
-            className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"
-          />
-          <div className="z-10 pb-4">
+
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-6 md:auto-rows-[22rem] mt-12">
+
+        {/* ── Grid 1 — Bio ─────────────────────────────────────────────── */}
+        <Reveal delay={0.1}><div className="flex flex-col justify-between grid-default-color grid-1 h-full w-full">
+
+          {/* Text block — top of card, always visible */}
+          <div className="z-10 relative">
             <p className="headtext">Driving Impact through Data & Software</p>
             <p className="subtext mt-4">
-              I am a results-focused Monitoring & Evaluation (M&E) professional and Software Engineer with 8 years of experience. My foundation is built on ensuring data integrity, conducting rigorous audits, and developing comprehensive analytics dashboards for large-scale operations.
+              I'm a results-focused M&E professional and Software Engineer with 8 years of experience ensuring data integrity, conducting rigorous audits, and building AI-powered full-stack applications for large-scale public health operations.
             </p>
-            <p className="subtext mt-4">
-              Driven by a hyper-analytical mindset, I thrive at the intersection of data management and software development—building AI-powered, full-stack applications while simultaneously managing critical public health data for TB elimination and COVID-19 response.
-            </p>
-            <p className="subtext mt-4">
-              When I am not architecting databases or writing code, you can find me studying human physiology, researching motorcycle mechanics, or producing music.
+            <p className="subtext mt-3">
+              Thriving at the intersection of data management and software development — from TB elimination dashboards to full-stack apps. Outside of code: human physiology, motorcycle mechanics, and music production.
             </p>
           </div>
-          <div className="absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
+
+          {/* Image — anchored to bottom-right, does NOT overlap text */}
+          <div className="relative h-36 md:h-44 mt-4 overflow-hidden rounded-xl">
+            <img
+              src="assets/coding-pov.png"
+              className="absolute bottom-0 right-0 w-auto h-full object-cover scale-110 origin-bottom-right opacity-80"
+              alt="Coding POV"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-storm via-transparent to-transparent" />
+          </div>
+
         </div></Reveal>
-        {/* Grid 2 */}
+
+        {/* ── Grid 2 — Draggable Cards ──────────────────────────────────── */}
         <Reveal delay={0.2}><div className="grid-default-color grid-2 h-full w-full">
           <div
             ref={grid2Container}
             className="flex items-center justify-center w-full h-full"
           >
-            <p className="flex items-end text-3xl md:text-5xl text-gray-500 font-bold text-center">
+            <p className="text-3xl text-gray-500 font-bold text-center select-none">
               CODE IS CRAFT
             </p>
-            <Card
-              style={{ rotate: "75deg", top: "30%", left: "20%" }}
-              text="M&E & DQA"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-30deg", top: "60%", left: "45%" }}
-              text="SOLID"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "90deg", bottom: "30%", left: "70%" }}
-              text="KPI Tracking"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-45deg", top: "55%", left: "0%" }}
-              text="Design Patterns"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "20deg", top: "10%", left: "38%" }}
-              text="HMIS & NIKSHAY"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "30deg", top: "70%", left: "70%" }}
-              image="assets/logos/csharp-pink.png"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-45deg", top: "70%", left: "25%" }}
-              image="assets/logos/dotnet-pink.png"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-45deg", top: "5%", left: "10%" }}
-              text="Capacity Building"
-              containerRef={grid2Container}
-            />
+            <Card style={{ rotate: "75deg",  top: "20%", left: "20%" }} text="M&E & DQA"       containerRef={grid2Container} />
+            <Card style={{ rotate: "-30deg", top: "45%", left: "45%" }} text="SOLID"             containerRef={grid2Container} />
+            <Card style={{ rotate: "90deg",  top: "15%", left: "65%" }} text="KPI Tracking"     containerRef={grid2Container} />
+            <Card style={{ rotate: "-45deg", top: "40%", left: "0%"  }} text="Design Patterns"  containerRef={grid2Container} />
+            <Card style={{ rotate: "20deg",  top: "5%",  left: "35%" }} text="HMIS & NIKSHAY"   containerRef={grid2Container} />
+            <Card style={{ rotate: "30deg",  top: "50%", left: "65%" }} image="assets/logos/csharp-pink.png"  containerRef={grid2Container} />
+            <Card style={{ rotate: "-45deg", top: "50%", left: "22%" }} image="assets/logos/dotnet-pink.png"  containerRef={grid2Container} />
+            <Card style={{ rotate: "-45deg", top: "3%",  left: "5%"  }} text="Capacity Building" containerRef={grid2Container} />
           </div>
         </div></Reveal>
-        {/* Grid 3 */}
+
+        {/* ── Grid 3 — Globe / Timezone ─────────────────────────────────── */}
         <Reveal delay={0.3}><div className="grid-black-color grid-3 h-full w-full">
-          <div className="z-10 w-[50%]">
+          <div className="z-10 w-[48%] flex flex-col justify-center h-full pl-2">
             <p className="headtext">Time Zone</p>
-            <p className="subtext">
-              I'm based in India, and open to remote work worldwide
+            <p className="subtext mt-2">
+              Based in India — open to remote work worldwide.
             </p>
           </div>
-          <figure className="absolute left-[30%] top-[10%]">
-            <Globe />
+          <figure className="absolute right-0 top-0 bottom-0 w-[55%] flex items-center justify-center overflow-hidden">
+            <div className="scale-[0.62] origin-center">
+              <Globe />
+            </div>
           </figure>
         </div></Reveal>
-        {/* Grid 4 */}
+
+        {/* ── Grid 4 — Contact CTA ──────────────────────────────────────── */}
         <Reveal delay={0.4}><div className="grid-special-color grid-4 h-full w-full">
-          <div className="flex flex-col items-center justify-center gap-4 size-full">
-            <p className="text-center headtext">
+          <div className="flex flex-col items-center justify-center gap-5 size-full px-6">
+            <p className="text-center headtext leading-snug">
               Do you want to start a project together?
             </p>
             <CopyEmailButton />
           </div>
         </div></Reveal>
-        {/* Grid 5 */}
+
+        {/* ── Grid 5 — Frameworks ───────────────────────────────────────── */}
         <Reveal delay={0.2}><div className="grid-default-color grid-5 h-full w-full">
-          <div className="z-10 w-[50%]">
+          <div className="z-10 w-[45%] flex flex-col justify-center h-full">
             <p className="headtext">Tools & Expertise</p>
-            <p className="subtext">
-              I specialize in a variety of languages, frameworks, and M&E systems that allow me to build scalable full-stack applications and manage rigorous public health data initiatives.
+            <p className="subtext mt-2">
+              Languages, frameworks, and M&E systems for full-stack apps and public health data.
             </p>
           </div>
-          <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
+          <div className="absolute inset-y-0 w-full h-full start-[42%]">
             <Frameworks />
           </div>
         </div></Reveal>
+
       </div>
     </section>
   );
