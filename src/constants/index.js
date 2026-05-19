@@ -120,6 +120,11 @@ export const mySocials = [
     icon: "/assets/socials/whatsApp.svg",
   },
   {
+    name: "Instagram",
+    href: "https://www.instagram.com/insomniac_vibe_/",
+    icon: "/assets/socials/instagram.svg",
+  },
+  {
     name: "Email",
     href: "mailto:souravkumarsk@gmail.com",
     icon: "/assets/socials/github.svg", // Fallback, update if email icon exists
