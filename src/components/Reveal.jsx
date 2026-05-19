@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 
-const Reveal = ({ children, delay = 0, direction = "up" }) => {
+const Reveal = ({ children, delay = 0, direction = "up", className = "" }) => {
   const variants = {
     hidden: {
       opacity: 0,
@@ -11,6 +11,7 @@ const Reveal = ({ children, delay = 0, direction = "up" }) => {
   };
   return (
     <motion.div
+      className={className}
       variants={variants}
       initial="hidden"
       whileInView="visible"
