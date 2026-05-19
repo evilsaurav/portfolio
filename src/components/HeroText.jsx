@@ -20,14 +20,14 @@ const HeroText = () => {
         </motion.h1>
         <div className="flex flex-col items-start mt-4 border-l-4 border-indigo-500 pl-4">
           <motion.p
-            className="text-6xl font-bold text-neutral-100 uppercase"
+            className="text-5xl font-bold text-neutral-100 uppercase"
             variants={variants}
             initial="hidden"
             animate="visible"
             transition={{ delay: 1.2 }}
           >
-            Data Professional &<br/>
-            Full-Stack Software Engineer
+            M&E Professional &<br/>
+            Software Engineer
           </motion.p>
           
           <motion.p
@@ -37,7 +37,7 @@ const HeroText = () => {
             animate="visible"
             transition={{ delay: 1.5 }}
           >
-            Bridging rigorous public health data analytics with scalable software engineering.
+            Bridging 8 years of rigorous public health data analytics with scalable software engineering.
           </motion.p>
           <motion.div 
             className="flex gap-4 mt-8"
@@ -68,13 +68,13 @@ const HeroText = () => {
         </motion.p>
         <div>
           <motion.p
-            className="text-5xl font-black text-neutral-300"
+            className="text-4xl font-black text-neutral-300"
             variants={variants}
             initial="hidden"
             animate="visible"
             transition={{ delay: 1.2 }}
           >
-            Data Professional <br />& Software Engineer
+            M&E Professional <br />& Software Engineer
           </motion.p>
           <motion.p
             className="text-xl font-medium text-neutral-400 mt-4"

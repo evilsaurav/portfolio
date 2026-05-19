@@ -17,12 +17,12 @@ const About = () => {
             className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"
           />
           <div className="z-10 pb-4">
-            <p className="headtext">Transforming Data into Digital Solutions</p>
+            <p className="headtext">Driving Impact through Data & Software</p>
             <p className="subtext mt-4">
-              I am a dedicated data professional and software engineer with over three years of experience managing complex data systems within the public health sector. My foundation is built on ensuring data integrity, conducting rigorous audits, and developing comprehensive analytics dashboards for large-scale operations.
+              I am a results-focused Monitoring & Evaluation (M&E) professional and Software Engineer with 8 years of experience. My foundation is built on ensuring data integrity, conducting rigorous audits, and developing comprehensive analytics dashboards for large-scale operations.
             </p>
             <p className="subtext mt-4">
-              Driven by a hyper-analytical mindset, I am expanding my technical architecture by building AI-powered, full-stack applications that solve real-world complexities. I thrive at the intersection of data management and software development.
+              Driven by a hyper-analytical mindset, I thrive at the intersection of data management and software development—building AI-powered, full-stack applications while simultaneously managing critical public health data for TB elimination and COVID-19 response.
             </p>
             <p className="subtext mt-4">
               When I am not architecting databases or writing code, you can find me studying human physiology, researching motorcycle mechanics, or producing music.
@@ -36,12 +36,12 @@ const About = () => {
             ref={grid2Container}
             className="flex items-center justify-center w-full h-full"
           >
-            <p className="flex items-end text-5xl text-gray-500">
+            <p className="flex items-end text-3xl md:text-5xl text-gray-500 font-bold text-center">
               CODE IS CRAFT
             </p>
             <Card
               style={{ rotate: "75deg", top: "30%", left: "20%" }}
-              text="GRASP"
+              text="M&E & DQA"
               containerRef={grid2Container}
             />
             <Card
@@ -51,17 +51,17 @@ const About = () => {
             />
             <Card
               style={{ rotate: "90deg", bottom: "30%", left: "70%" }}
-              text="Design Patterns"
+              text="KPI Tracking"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-45deg", top: "55%", left: "0%" }}
-              text="Design Principles"
+              text="Design Patterns"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "20deg", top: "10%", left: "38%" }}
-              text="SRP"
+              text="HMIS & NIKSHAY"
               containerRef={grid2Container}
             />
             <Card
@@ -76,7 +76,7 @@ const About = () => {
             />
             <Card
               style={{ rotate: "-45deg", top: "5%", left: "10%" }}
-              image="assets/logos/blazor-pink.png"
+              text="Capacity Building"
               containerRef={grid2Container}
             />
           </div>
@@ -105,10 +105,9 @@ const About = () => {
         {/* Grid 5 */}
         <div className="grid-default-color grid-5">
           <div className="z-10 w-[50%]">
-            <p className="headText">Tech Stack</p>
+            <p className="headText">Tools & Expertise</p>
             <p className="subtext">
-              I specialize in a variety of languages, frameworks, and tools that
-              allow me to build robust and scalable data solutions and web applications.
+              I specialize in a variety of languages, frameworks, and M&E systems that allow me to build scalable full-stack applications and manage rigorous public health data initiatives.
             </p>
           </div>
           <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
