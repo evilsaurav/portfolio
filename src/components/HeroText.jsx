@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { FlipWords } from "../components/FlipWords";
 
 const HeroText = () => {
   const variants = {
@@ -19,16 +20,24 @@ const HeroText = () => {
           Hi, I'm Saurav Kumar
         </motion.h1>
         <div className="flex flex-col items-start mt-4 border-l-4 border-indigo-500 pl-4">
-          <motion.p
+          <motion.div
             className="text-5xl font-bold text-neutral-100 uppercase"
             variants={variants}
             initial="hidden"
             animate="visible"
             transition={{ delay: 1.2 }}
           >
-            M&E Professional &<br/>
-            Software Engineer
-          </motion.p>
+            <FlipWords
+              words={[
+                "M&E Professional",
+                "Software Engineer",
+                "Full-Stack Developer",
+                "Data Analyst",
+              ]}
+              duration={2500}
+              className="text-5xl font-bold text-neutral-100 uppercase"
+            />
+          </motion.div>
           
           <motion.p
             className="text-2xl font-medium text-neutral-400 mt-6 max-w-3xl"
@@ -67,15 +76,24 @@ const HeroText = () => {
           Hi, I'm Saurav Kumar
         </motion.p>
         <div>
-          <motion.p
+          <motion.div
             className="text-4xl font-black text-neutral-300"
             variants={variants}
             initial="hidden"
             animate="visible"
             transition={{ delay: 1.2 }}
           >
-            M&E Professional <br />& Software Engineer
-          </motion.p>
+            <FlipWords
+              words={[
+                "M&E Professional",
+                "Software Engineer",
+                "Full-Stack Developer",
+                "Data Analyst",
+              ]}
+              duration={2500}
+              className="text-4xl font-black text-neutral-300"
+            />
+          </motion.div>
           <motion.p
             className="text-xl font-medium text-neutral-400 mt-4"
             variants={variants}
