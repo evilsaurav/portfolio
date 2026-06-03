@@ -46,6 +46,30 @@
       transform: translateY(calc(-100% - var(--gap)));
     }
   }
+
+  --animate-shimmer: shimmer 4s linear infinite;
+  @keyframes shimmer {
+    from { background-position: 0% 50%; }
+    to   { background-position: 200% 50%; }
+  }
+
+  --animate-ping-slow: ping-slow 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+  @keyframes ping-slow {
+    75%, 100% { transform: scale(2); opacity: 0; }
+  }
+}
+
+.page-loader {
+  position: fixed;
+  inset: 0;
+  background: #030412;
+  z-index: 9999;
+  clip-path: inset(0 0 0 0);
+  animation: wipe-out 0.8s cubic-bezier(0.77, 0, 0.175, 1) 0.3s forwards;
+}
+
+@keyframes wipe-out {
+  to { clip-path: inset(0 100% 0 0); }
 }
 body {
   background: #030412;
@@ -69,6 +93,10 @@ body {
 
 .text-heading {
   @apply font-bold text-3xl md:text-4xl;
+  background: linear-gradient(135deg, #ffffff 40%, #7a57db 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .headtext {
@@ -134,5 +162,5 @@ body {
 }
 
 .field-input-focus {
-  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20;
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender/50 focus-visible:border-lavender/50;
 }

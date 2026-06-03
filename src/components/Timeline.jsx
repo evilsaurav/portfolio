@@ -31,18 +31,32 @@ export const Timeline = ({ data }) => {
             key={index}
             className="flex justify-start pt-10 md:pt-40 md:gap-10"
           >
-            <div className="sticky z-40 flex flex-col items-center self-start max-w-xs md:flex-row top-40 lg:max-w-sm md:w-full">
+            <motion.div
+              className="sticky z-40 flex flex-col items-center self-start max-w-xs md:flex-row top-40 lg:max-w-sm md:w-full"
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
+            >
               <div className="absolute flex items-center justify-center w-10 h-10 rounded-full -left-[15px] bg-midnight">
-                <div className="w-4 h-4 p-2 border rounded-full bg-neutral-800 border-neutral-700" />
+                <span className="absolute inline-flex w-full h-full rounded-full opacity-50 animate-ping-slow"
+                      style={{ background: "rgba(92,51,204,0.3)" }} />
+                <div className="w-4 h-4 p-2 border rounded-full bg-neutral-800 border-neutral-700 relative z-10" />
               </div>
               <div className="flex-col hidden gap-2 text-xl font-bold md:flex md:pl-20 md:text-4xl text-neutral-300">
                 <h3>{item.date}</h3>
                 <h3 className="text-3xl text-neutral-400">{item.title}</h3>
                 <h3 className="text-3xl text-neutral-500">{item.job}</h3>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="relative w-full pl-20 pr-4 md:pl-4">
+            <motion.div
+              className="relative w-full pl-20 pr-4 md:pl-4"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
+            >
               <div className="block mb-4 text-2xl font-bold text-left text-neutral-300 md:hidden ">
                 <h3>{item.date}</h3>
                 <h3>{item.job}</h3>
@@ -52,7 +66,7 @@ export const Timeline = ({ data }) => {
                   {content}
                 </p>
               ))}
-            </div>
+            </motion.div>
           </div>
         ))}
         <div
