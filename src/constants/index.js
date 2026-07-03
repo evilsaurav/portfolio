@@ -1,5 +1,35 @@
 export const myProjects = [
   {
+    id: 6,
+    title: "Aura Vibe Lock",
+    description:
+      "A Gen Z-focused gamified habit-tracking and journaling app built with modern Android (Jetpack Compose).",
+    subDescription: [
+      "Transforms daily check-ins into an addictive, RPG-style experience with dynamic 3D visuals.",
+      "Features personalized AI-driven 'Aura' analysis using Google's Gemini AI."
+    ],
+    href: "https://github.com/evilsaurav/Aura-Vibe_Lock",
+    logo: "",
+    image: "/assets/projects/dashboard.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "Kotlin",
+        path: "/assets/socials/github.svg",
+      },
+      {
+        id: 2,
+        name: "Firebase",
+        path: "/assets/socials/github.svg",
+      },
+      {
+        id: 3,
+        name: "Gemini AI",
+        path: "/assets/socials/github.svg",
+      },
+    ],
+  },
+  {
     id: 1,
     title: "BCABuddy (AI Student Assistant)",
     description:
