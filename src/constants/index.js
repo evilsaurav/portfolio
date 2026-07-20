@@ -10,7 +10,7 @@ export const myProjects = [
     ],
     href: "https://github.com/evilsaurav/Aura-Vibe_Lock",
     logo: "",
-    image: "/assets/projects/dashboard.jpg",
+    image: "/assets/projects/aura-vibe-lock.jpg",
     tags: [
       {
         id: 1,
