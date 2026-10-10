@@ -263,6 +263,7 @@ const HeroSection = () => {
     href="/resume.pdf"
     target="_blank"
     rel="noopener noreferrer"
+    download="Saurav_Kumar_ME_Resume_2026.pdf"
     onMouseEnter={() => setIsHovered(true)}
     onMouseLeave={() => setIsHovered(false)}
     whileHover={{ scale: 1.02 }}
