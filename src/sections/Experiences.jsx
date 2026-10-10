@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
+import { experiences } from "../constants/index.js";
 const journey = experiences.map((e, i) => ({
   id: String(i + 1).padStart(2, '0'),
   year: e.date,
