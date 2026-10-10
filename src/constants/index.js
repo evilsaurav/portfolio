@@ -1,6 +1,165 @@
 export const myProjects = [
   {
-    id: 6,
+    id: 1,
+    title: "Doctors For You (DFY) - TB Field MIS & Analytics System",
+    category: "CLINICAL ENTERPRISE MIS",
+    description:
+      "An enterprise-grade, offline-first Management Information System (MIS) and Clinical Analytics Platform built for Doctors For You (DFY) to monitor, evaluate, and accelerate Tuberculosis (TB) elimination operations across 22+ districts in Bihar, India.",
+    subDescription: [
+      "100% Offline-First Mobile PWA with encrypted local PIN vault (SHA-256 Web Crypto) and IndexedDB auto-sync, enabling uninterrupted clinical reporting in remote zero-network field zones.",
+      "Executive Analytics & Reports Studio cutting PostgreSQL database query overhead by 95% via in-memory TTL caching and pre-aggregated district rollups.",
+      "Real-time Clinical Cascade tracking, Patient Dropout Radar, and Nikshay ID deduplication across 20+ clinical indicators with direct 1-tap patient calling.",
+      "High-density 17-Indicator 33-Sheet District KPI Excel Engine with Render 512MB RAM anti-OOM spooling, plus relational Travel Allowance & Bike Log engine with atomic bulk transactions."
+    ],
+    href: "https://dfy-frontend.vercel.app/",
+    liveUrl: "https://dfy-frontend.vercel.app/",
+    github: "https://github.com/evilsaurav/dfy-mis-app",
+    logo: "",
+    image: "/assets/projects/dashboard.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "FastAPI",
+        path: "/assets/logos/fastapi.svg",
+      },
+      {
+        id: 2,
+        name: "Python 3.10+",
+        path: "/assets/logos/python.svg",
+      },
+      {
+        id: 3,
+        name: "React 19",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 4,
+        name: "Supabase PostgreSQL",
+        path: "/assets/logos/supabase.svg",
+      },
+      {
+        id: 5,
+        name: "Tailwind CSS v4",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+      {
+        id: 6,
+        name: "Offline PWA / IndexedDB",
+        path: "/assets/logos/vitejs.svg",
+      },
+      {
+        id: 7,
+        name: "Pandas & OpenPyXL",
+        path: "/assets/logos/microsoftsqlserver.svg",
+      },
+    ],
+    metrics: [
+      { label: "SCALE", value: "22+ Districts of Bihar" },
+      { label: "OFFLINE VAULT", value: "100% Offline-First (PIN & IndexedDB)" },
+      { label: "QUERY EFFICIENCY", value: "95% Database Read Cut" },
+      { label: "EXCEL STUDIO", value: "17-Indicator 33-Sheet Engine" },
+      { label: "STATUS", value: "v2.9.1 Active Production" },
+    ],
+  },
+  {
+    id: 2,
+    title: "DFY Tracker — Enterprise Healthcare Analytics & Intelligence Platform",
+    category: "CLINICAL INTELLIGENCE & GIS",
+    description:
+      "Enterprise-grade clinical analytics, vector GIS mapping, and strategic performance monitoring platform engineered for India's National Tuberculosis Elimination Program (NTEP / Nikshay) across all 38 districts of Bihar.",
+    subDescription: [
+      "NPY Financial Audit & DBT Disbursal Intelligence engine auditing beneficiary entitlements, PFMS bank rejections, and backlog gaps across all 38 districts.",
+      "100% Native Vector GIS Bihar Choropleth Map rendered via QPainter with sub-second lazy loading (<0.5s across 115k+ records) and zero-Chromium overhead.",
+      "Modern 'VS Mode' Comparative Analytics Hub featuring trajectory scoring, dual-bar care cascade, and Groq LLaMA 3.3 70B AI strategic narratives.",
+      "Multi-Format Executive Presentation Studio generating McKinsey-style 16:9 PowerPoint decks, automated openpyxl Excel workbooks, and formal ReportLab PDF briefings."
+    ],
+    href: "https://github.com/evilsaurav/DFY-Tracker-",
+    github: "https://github.com/evilsaurav/DFY-Tracker-",
+    logo: "",
+    image: "/assets/projects/auth-system.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "Python 3.10+",
+        path: "/assets/logos/python.svg",
+      },
+      {
+        id: 2,
+        name: "PySide6 / Qt6",
+        path: "/assets/logos/qt.svg",
+      },
+      {
+        id: 3,
+        name: "Vector GIS / QPainter",
+        path: "/assets/logos/python.svg",
+      },
+      {
+        id: 4,
+        name: "LLaMA 3.3 AI",
+        path: "/assets/socials/github.svg",
+      },
+      {
+        id: 5,
+        name: "NumPy & Pandas",
+        path: "/assets/logos/python.svg",
+      },
+      {
+        id: 6,
+        name: "PowerPoint & OpenPyXL",
+        path: "/assets/logos/microsoft.svg",
+      },
+      {
+        id: 7,
+        name: "HMAC-SHA256 Security",
+        path: "/assets/logos/auth0.svg",
+      },
+    ],
+    metrics: [
+      { label: "GIS COVERAGE", value: "38 Districts of Bihar" },
+      { label: "ENGINE & UI", value: "Native PySide6 (Qt6) + QThread" },
+      { label: "DATA SCALE", value: "115k+ Records (<0.5s Load)" },
+      { label: "TEST SUITE", value: "351/351 Tests Passed (100%)" },
+      { label: "VERSION & STATUS", value: "v3.6.0 Production Release" },
+    ],
+  },
+  {
+    id: 3,
+    title: "BCABuddy (AI Student Assistant)",
+    description:
+      "An AI-powered full-stack application designed to streamline academic workflows for students.",
+    subDescription: [
+      "Features include automated syllabus tracking, intelligent exam preparation tools, and resource management.",
+      "Streamlines academic workflows through modern UI/UX."
+    ],
+    href: "https://kind-sea-0b41fb700.2.azurestaticapps.net",
+    liveUrl: "https://kind-sea-0b41fb700.2.azurestaticapps.net",
+    logo: "",
+    image: "/assets/projects/elearning.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "Python",
+        path: "/assets/logos/python.svg",
+      },
+      {
+        id: 2,
+        name: "FastAPI",
+        path: "/assets/logos/fastapi.svg",
+      },
+      {
+        id: 3,
+        name: "React.js",
+        path: "/assets/logos/react.svg",
+      },
+    ],
+    metrics: [
+      { label: "CLOUD", value: "Azure Static Web Apps" },
+      { label: "AI WORKFLOW", value: "Automated Syllabus & Exam Prep" },
+      { label: "STATUS", value: "Live Production" },
+    ],
+  },
+  {
+    id: 4,
     title: "Aura Vibe Lock",
     description:
       "A Gen Z-focused gamified habit-tracking and journaling app built with modern Android (Jetpack Compose).",
@@ -9,6 +168,7 @@ export const myProjects = [
       "Features personalized AI-driven 'Aura' analysis using Google's Gemini AI."
     ],
     href: "https://github.com/evilsaurav/Aura-Vibe_Lock",
+    github: "https://github.com/evilsaurav/Aura-Vibe_Lock",
     logo: "",
     image: "/assets/projects/aura-vibe-lock.jpg",
     tags: [
@@ -28,82 +188,14 @@ export const myProjects = [
         path: "/assets/socials/github.svg",
       },
     ],
-  },
-  {
-    id: 1,
-    title: "BCABuddy (AI Student Assistant)",
-    description:
-      "An AI-powered full-stack application designed to streamline academic workflows for students.",
-    subDescription: [
-      "Features include automated syllabus tracking, intelligent exam preparation tools, and resource management.",
-      "Streamlines academic workflows through modern UI/UX."
-    ],
-    href: "https://kind-sea-0b41fb700.2.azurestaticapps.net",
-    logo: "",
-    image: "/assets/projects/elearning.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Python",
-        path: "/assets/logos/javascript.svg", // fallback
-      },
-      {
-        id: 2,
-        name: "FastAPI",
-        path: "/assets/logos/react.svg", // fallback
-      },
-      {
-        id: 3,
-        name: "React.js",
-        path: "/assets/logos/react.svg",
-      },
+    metrics: [
+      { label: "PLATFORM", value: "Android (Jetpack Compose)" },
+      { label: "AI ENGINE", value: "Google Gemini AI" },
+      { label: "STATUS", value: "Open Source" },
     ],
   },
   {
-    id: 2,
-    title: "Tuberculosis M&E Analytics Dashboard",
-    description:
-      "A robust data visualization dashboard engineered to monitor critical health indicators.",
-    subDescription: [
-      "Aggregates complex datasets to track project impact and improve field-level efficiency.",
-      "Integrates with NIKSHAY for real-time monitoring and advanced insights."
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/dashboard.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Power BI",
-        path: "/assets/logos/microsoftsqlserver.svg",
-      },
-      {
-        id: 2,
-        name: "SQL",
-        path: "/assets/logos/microsoftsqlserver.svg",
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "National TB Elimination Program (NTEP)",
-    description:
-      "A comprehensive monitoring and evaluation framework to sustain Treatment Success Rates across 22 districts in Bihar.",
-    subDescription: [
-      "Designed and operated a NIKSHAY-based M&E tracking system covering 53 blocks, managing ~45 patient cases daily.",
-      "Conducted rigorous data audits ensuring 100% program compliance with zero flags in government review."
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/dashboard.jpg",
-    tags: [
-      { id: 1, name: "NIKSHAY", path: "/assets/socials/github.svg" }, // fallback icon
-      { id: 2, name: "HMIS", path: "/assets/socials/github.svg" },
-      { id: 3, name: "DQA", path: "/assets/socials/github.svg" },
-    ],
-  },
-  {
-    id: 4,
+    id: 5,
     title: "Mobile Medical Unit (MMU) Project",
     description:
       "Data management and HMIS reporting system for a patient database averaging 400 daily records across Bhojpur district.",
@@ -120,7 +212,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "COVID-19 Community Response",
     description:
       "Coordinated logistics and public health response operations across 36 villages, resulting in 40,000 vaccinations administered.",

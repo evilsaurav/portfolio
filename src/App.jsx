@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Navbar from './sections/Navbar';
 import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
 import Experiences from "./sections/Experiences";
-import Testimonial from "./sections/Testimonial";
 import Contact from "./sections/Contact";
-import Footer from './sections/Footer';
-import CustomCursor from "./components/CustomCursor";
-import ScrollToTop from "./components/ScrollToTop";
+import Skills from "./sections/Skills";
 
 const App = () => {
   const [loaded, setLoaded] = useState(false);
@@ -23,23 +19,14 @@ const App = () => {
       {/* Page-load wipe overlay */}
       {!loaded && <div className="page-loader" />}
 
-      {/* Custom cursor — hidden on touch devices */}
-      <div className="hidden md:block">
-        <CustomCursor />
-      </div>
-
-      <div className="container mx-auto max-w-7xl">
-        <Navbar />
+      <div className="w-full min-h-screen bg-black text-[#E8DFD8] selection:bg-[#cbb59d] selection:text-black">
         <Hero />
         <About />
         <Projects />
+        <Skills />
         <Experiences />
-        <Testimonial />
         <Contact />
-        <Footer />
       </div>
-
-      <ScrollToTop />
     </>
   );
 };
