@@ -120,7 +120,7 @@ const HeroSection = () => {
     className="text-xs sm:text-sm font-semibold tracking-[0.35em] uppercase text-[#EAD8C7] hover:opacity-75 transition-opacity"
     style={{ fontFamily: "'Montserrat', sans-serif" }}
   >
-            LOHITHA.
+            SAURAV.
           </a>
 
           {

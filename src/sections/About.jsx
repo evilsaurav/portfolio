@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { motion, useMotionValue, useTransform, useSpring } from "motion/react";
-import aboutImg from "../assets/about.png";
+const aboutImg = "/assets/coding-pov.png";
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -115,10 +115,10 @@ const AboutSection = () => {
     style={{ fontFamily: "'Bebas Neue', sans-serif" }}
   >
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] via-[#D5CBC0] to-[#605448] drop-shadow-[0_4px_10px_rgba(0,0,0,0.85)]">
-                  I DON'T JUST WRITE CODE.
+                  I DON&apos;T JUST WRITE CODE.
                 </span>
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A] drop-shadow-[0_8px_25px_rgba(201,158,93,0.3)]">
-                  I BUILD WHAT'S NEXT.
+                  I BUILD WHAT&apos;S NEXT.
                 </span>
               </h2>
             </motion.div>
@@ -131,7 +131,7 @@ const AboutSection = () => {
     className="text-xs sm:text-sm md:text-[14.5px] font-light text-[#B3A497] leading-[1.85] tracking-wide mb-10 max-w-xl"
     style={{ fontFamily: "'Montserrat', sans-serif" }}
   >
-              I'm <span className="text-[#F3DBB3] font-medium">Kumar Shamya Saurav</span>, a Full Stack Developer and Data Science student specializing in building scalable web architectures, AI-integrated platforms, and refined digital experiences. With a strong algorithmic foundation and a focus on clean engineering, I turn complex requirements into impactful products.
+              I&apos;m <span className="text-[#F3DBB3] font-medium">Saurav Kumar</span>, a dedicated Data Professional and Full-Stack Software Engineer with over 3 years of experience managing complex data systems in the public health sector. Driven by a hyper-analytical mindset, I build resilient offline-first platforms, high-performance dashboards, and AI-powered solutions that bring structured clarity to complex operational challenges across Bihar.
             </motion.p>
 
             {
@@ -149,10 +149,10 @@ const AboutSection = () => {
     className="text-3xl sm:text-4xl font-light text-[#F4EBE2] tracking-tight"
     style={{ fontFamily: "'Bebas Neue', sans-serif" }}
   >
-                  1200+
+                  3+ YRS
                 </span>
                 <span className="text-[10px] font-medium tracking-[0.22em] uppercase text-[#A8988B] mt-0.5">
-                  DSA Solved
+                  Health Data Systems
                 </span>
               </div>
 
@@ -164,10 +164,10 @@ const AboutSection = () => {
     className="text-3xl sm:text-4xl font-light text-[#D4AF37] tracking-tight"
     style={{ fontFamily: "'Bebas Neue', sans-serif" }}
   >
-                  9.07
+                  22+
                 </span>
                 <span className="text-[10px] font-medium tracking-[0.22em] uppercase text-[#A8988B] mt-0.5">
-                  B.Tech CGPA
+                  Priority Districts
                 </span>
               </div>
 
@@ -179,10 +179,10 @@ const AboutSection = () => {
     className="text-3xl sm:text-4xl font-light text-[#F4EBE2] tracking-tight"
     style={{ fontFamily: "'Bebas Neue', sans-serif" }}
   >
-                  40+
+                  99%+
                 </span>
                 <span className="text-[10px] font-medium tracking-[0.22em] uppercase text-[#A8988B] mt-0.5">
-                  Industry-Grade Projects
+                  Data Integrity
                 </span>
               </div>
 
@@ -194,10 +194,10 @@ const AboutSection = () => {
     className="text-3xl sm:text-4xl font-light text-[#D4AF37] tracking-tight"
     style={{ fontFamily: "'Bebas Neue', sans-serif" }}
   >
-                  Top 100
+                  115K+
                 </span>
                 <span className="text-[10px] font-medium tracking-[0.22em] uppercase text-[#A8988B] mt-0.5">
-                  Myntra Hackerramp
+                  Records Monitored
                 </span>
               </div>
             </motion.div>
@@ -284,7 +284,7 @@ const AboutSection = () => {
   }
                 <img
     src={aboutImg}
-    alt="Kumar Shamya Saurav"
+    alt="Saurav Kumar"
     className="w-full h-full object-cover object-top filter brightness-[0.94] contrast-[1.06] saturate-[1.02] group-hover:brightness-105 group-hover:contrast-[1.12] transition-all duration-700 ease-out"
   />
 

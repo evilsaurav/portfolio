@@ -232,14 +232,14 @@ export const myProjects = [
 
 export const mySocials = [
   {
-    name: "Linkedin",
-    href: "https://www.linkedin.com/in/saurav-kumar-79b34b67",
-    icon: "/assets/socials/linkedIn.svg",
+    name: "GitHub",
+    href: "https://github.com/evilsaurav",
+    icon: "/assets/socials/github.svg",
   },
   {
-    name: "WhatsApp",
-    href: "https://wa.me/7903770587",
-    icon: "/assets/socials/whatsApp.svg",
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/saurav-kumar-79b34b67",
+    icon: "/assets/socials/linkedIn.svg",
   },
   {
     name: "Instagram",
@@ -247,10 +247,15 @@ export const mySocials = [
     icon: "/assets/socials/instagram.svg",
   },
   {
+    name: "WhatsApp",
+    href: "https://wa.me/7903770587",
+    icon: "/assets/socials/whatsApp.svg",
+  },
+  {
     name: "Email",
     href: "mailto:souravkumarsk@gmail.com",
-    icon: "/assets/socials/github.svg", // Fallback, update if email icon exists
-  }
+    icon: "/assets/socials/github.svg",
+  },
 ];
 
 export const experiences = [
