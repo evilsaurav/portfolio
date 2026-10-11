@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { motion, useMotionValue, useTransform, useSpring } from "motion/react";
-const aboutImg = "/assets/coding-pov.png";
+const aboutImg = "/assets/profile.jpg";
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -285,7 +285,7 @@ const AboutSection = () => {
                 <img
     src={aboutImg}
     alt="Saurav Kumar"
-    className="w-full h-full object-cover object-top filter brightness-[0.94] contrast-[1.06] saturate-[1.02] group-hover:brightness-105 group-hover:contrast-[1.12] transition-all duration-700 ease-out"
+    className="w-full h-full object-cover object-[center_12%] filter brightness-[0.98] contrast-[1.05] saturate-[1.05] group-hover:brightness-105 group-hover:contrast-[1.12] transition-all duration-700 ease-out"
   />
 
                 {
